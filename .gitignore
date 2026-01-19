@@ -42,3 +42,8 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+# Temporary deployment files
+ftp-deploy/
+prepare-ftp-deploy.sh
+test_ssh.sh
