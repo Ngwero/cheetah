@@ -31,7 +31,7 @@ const Home1 = () => {
       {/* Hero Section */}
       <section className="hero-section hero-1" style={{ 
         background: 'linear-gradient(135deg, #02095b 0%, #0066cc 100%)',
-        padding: '40px 0 80px 0',
+        padding: '80px 0',
         minHeight: '600px',
         display: 'flex',
         alignItems: 'center'
@@ -39,7 +39,7 @@ const Home1 = () => {
         <div className="container">
           <div className="row align-items-center">
             {/* Left Side - Text Content */}
-            <div className="col-lg-4">
+            <div className="col-lg-5">
               <div className="hero-content" style={{ color: '#fff' }}>
                 <h6 style={{ 
                   fontSize: '16px', 
@@ -95,11 +95,10 @@ const Home1 = () => {
             </div>
 
             {/* Center - Image */}
-            <div className="col-lg-4 text-center" style={{ padding: '0 40px' }}>
+            <div className="col-lg-3 text-center">
               <div style={{ 
                 position: 'relative',
-                zIndex: 1,
-                padding: '40px'
+                zIndex: 1
               }}>
                 <img 
                   src="assets/img/hero/hero-1.svg" 
@@ -109,9 +108,7 @@ const Home1 = () => {
                     maxWidth: '440px',
                     height: '680px',
                     objectFit: 'cover',
-                    borderRadius: '10px',
-                    margin: '0 auto',
-                    display: 'block'
+                    borderRadius: '10px'
                   }}
                 />
               </div>
@@ -121,17 +118,17 @@ const Home1 = () => {
             <div className="col-lg-4">
               <div style={{
                 backgroundColor: '#fff',
-                padding: '20px',
+                padding: '30px',
                 borderRadius: '10px',
                 boxShadow: '0 10px 40px rgba(0,0,0,0.2)'
               }}>
                 {/* Service Type Tabs */}
                 <div style={{
                   display: 'flex',
-                  gap: '4px',
-                  marginBottom: '15px',
+                  gap: '5px',
+                  marginBottom: '25px',
                   backgroundColor: '#f5f5f5',
-                  padding: '4px',
+                  padding: '5px',
                   borderRadius: '5px'
                 }}>
                   <button
@@ -139,13 +136,12 @@ const Home1 = () => {
                     onClick={() => setFormData(prev => ({ ...prev, serviceType: 'Home' }))}
                     style={{
                       flex: 1,
-                      padding: '8px',
+                      padding: '10px',
                       border: 'none',
-                      borderRadius: '4px',
+                      borderRadius: '5px',
                       backgroundColor: formData.serviceType === 'Home' ? '#ff8c00' : 'transparent',
                       color: formData.serviceType === 'Home' ? '#fff' : '#333',
                       fontWeight: '600',
-                      fontSize: '13px',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease'
                     }}
@@ -157,13 +153,12 @@ const Home1 = () => {
                     onClick={() => setFormData(prev => ({ ...prev, serviceType: 'Public' }))}
                     style={{
                       flex: 1,
-                      padding: '8px',
+                      padding: '10px',
                       border: 'none',
-                      borderRadius: '4px',
+                      borderRadius: '5px',
                       backgroundColor: formData.serviceType === 'Public' ? '#ff8c00' : 'transparent',
                       color: formData.serviceType === 'Public' ? '#fff' : '#333',
                       fontWeight: '600',
-                      fontSize: '13px',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease'
                     }}
@@ -175,13 +170,12 @@ const Home1 = () => {
                     onClick={() => setFormData(prev => ({ ...prev, serviceType: 'Enterprise' }))}
                     style={{
                       flex: 1,
-                      padding: '8px',
+                      padding: '10px',
                       border: 'none',
-                      borderRadius: '4px',
+                      borderRadius: '5px',
                       backgroundColor: formData.serviceType === 'Enterprise' ? '#ff8c00' : 'transparent',
                       color: formData.serviceType === 'Enterprise' ? '#fff' : '#333',
                       fontWeight: '600',
-                      fontSize: '13px',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease'
                     }}
@@ -192,7 +186,7 @@ const Home1 = () => {
 
                 {/* Form */}
                 <form onSubmit={handleSubmit}>
-                  <div style={{ marginBottom: '12px' }}>
+                  <div style={{ marginBottom: '20px' }}>
                     <input
                       type="text"
                       name="firstName"
@@ -202,15 +196,15 @@ const Home1 = () => {
                       required
                       style={{
                         width: '100%',
-                        padding: '10px 12px',
+                        padding: '12px 15px',
                         border: '1px solid #ddd',
                         borderRadius: '5px',
-                        fontSize: '13px',
+                        fontSize: '14px',
                         outline: 'none'
                       }}
                     />
                   </div>
-                  <div style={{ marginBottom: '12px' }}>
+                  <div style={{ marginBottom: '20px' }}>
                     <input
                       type="text"
                       name="lastName"
@@ -220,15 +214,15 @@ const Home1 = () => {
                       required
                       style={{
                         width: '100%',
-                        padding: '10px 12px',
+                        padding: '12px 15px',
                         border: '1px solid #ddd',
                         borderRadius: '5px',
-                        fontSize: '13px',
+                        fontSize: '14px',
                         outline: 'none'
                       }}
                     />
                   </div>
-                  <div style={{ marginBottom: '12px' }}>
+                  <div style={{ marginBottom: '20px' }}>
                     <input
                       type="tel"
                       name="phone"
@@ -238,15 +232,15 @@ const Home1 = () => {
                       required
                       style={{
                         width: '100%',
-                        padding: '10px 12px',
+                        padding: '12px 15px',
                         border: '1px solid #ddd',
                         borderRadius: '5px',
-                        fontSize: '13px',
+                        fontSize: '14px',
                         outline: 'none'
                       }}
                     />
                   </div>
-                  <div style={{ marginBottom: '12px' }}>
+                  <div style={{ marginBottom: '20px' }}>
                     <input
                       type="email"
                       name="email"
@@ -256,15 +250,15 @@ const Home1 = () => {
                       required
                       style={{
                         width: '100%',
-                        padding: '10px 12px',
+                        padding: '12px 15px',
                         border: '1px solid #ddd',
                         borderRadius: '5px',
-                        fontSize: '13px',
+                        fontSize: '14px',
                         outline: 'none'
                       }}
                     />
                   </div>
-                  <div style={{ marginBottom: '15px' }}>
+                  <div style={{ marginBottom: '25px' }}>
                     <input
                       type="text"
                       name="address"
@@ -274,10 +268,10 @@ const Home1 = () => {
                       required
                       style={{
                         width: '100%',
-                        padding: '10px 12px',
+                        padding: '12px 15px',
                         border: '1px solid #ddd',
                         borderRadius: '5px',
-                        fontSize: '13px',
+                        fontSize: '14px',
                         outline: 'none'
                       }}
                     />
@@ -286,12 +280,12 @@ const Home1 = () => {
                     type="submit"
                     style={{
                       width: '100%',
-                      padding: '12px',
+                      padding: '15px',
                       backgroundColor: '#02095b',
                       color: '#fff',
                       border: 'none',
                       borderRadius: '5px',
-                      fontSize: '14px',
+                      fontSize: '16px',
                       fontWeight: '600',
                       cursor: 'pointer',
                       transition: 'all 0.3s ease'

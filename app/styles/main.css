@@ -9102,9 +9102,7 @@ input.main-search-input::placeholder {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   background-color: #0c0f2b;
-  z-index: 100;
-  opacity: 1 !important;
-  visibility: visible !important;
+  z-index: 10;
 }
 
 .marquee-wrapper {
@@ -9115,9 +9113,7 @@ input.main-search-input::placeholder {
   margin: 0 !important;
   height: 35px;
   line-height: 35px;
-  z-index: 100;
-  opacity: 1 !important;
-  visibility: visible !important;
+  z-index: 10;
 }
 @media (max-width: 991px) {
   .marquee-wrapper {
@@ -9159,12 +9155,10 @@ input.main-search-input::placeholder {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
-  text-shadow: none;
-  filter: none;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  filter: brightness(1.3);
   position: relative;
-  z-index: 100;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  z-index: 11;
 }
 @media (max-width: 991px) {
   .text-slider.service-text {
@@ -9205,7 +9199,6 @@ input.main-search-input::placeholder {
 .text-slider.style-border {
   position: relative;
   padding-left: 65px;
-  opacity: 1 !important;
 }
 .text-slider.style-border::before {
   position: absolute;
@@ -9213,10 +9206,9 @@ input.main-search-input::placeholder {
   left: 0;
   content: "";
   width: 60px;
-  height: 3px;
-  background-color: #ff8d03 !important;
-  opacity: 1 !important;
-  filter: none !important;
+  height: 8px;
+  background-color: var(--theme);
+  opacity: 0.5;
 }
 
 .marquee-inner {
@@ -9318,20 +9310,6 @@ input.main-search-input::placeholder {
 .marquee-inner.to-left {
   -webkit-animation: marqueeLeft 25s linear infinite;
           animation: marqueeLeft 25s linear infinite;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.marquee-inner {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.marqee-list {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.marquee-item {
-  opacity: 1 !important;
-  visibility: visible !important;
 }
 
 @-webkit-keyframes marqueeLeft {
@@ -12673,18 +12651,6 @@ p.sticky-label {
 }
 .footer-bottom .footer-wrapper p a {
   color: var(--white);
-}
-
-/* Footer Social Icons Hover Effect */
-.footer-content .social-icon a:hover {
-  color: #ff8d03 !important;
-  transform: translateY(-2px);
-}
-.footer-content .contact-info a:hover {
-  color: #ff8d03;
-}
-.footer-content .contact-info i {
-  transition: color 0.3s;
 }
 
 /* Help Page Styles */

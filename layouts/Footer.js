@@ -71,19 +71,19 @@ const Footer1 = () => {
                   </Link>
                 </div>
                 <div className="footer-content">
-                  <p>
+                  <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                     CheetahNet is Uganda's leading internet service provider, delivering high-speed broadband, fiber optic, and WiFi solutions for homes and businesses. We connect communities with reliable, fast, and affordable internet services.
                   </p>
-                  <div className="contact-info" style={{ marginTop: '20px', marginBottom: '20px' }}>
-                    <p style={{ marginBottom: '8px' }}>
-                      <i className="fas fa-envelope" style={{ marginRight: '8px', color: '#ff8d03' }} />
-                      <a href="mailto:info@cheetahnet.ug" className="link">
+                  <div className="contact-info" style={{ marginBottom: '25px' }}>
+                    <p style={{ marginBottom: '10px', display: 'flex', alignItems: 'center' }}>
+                      <i className="fas fa-envelope" style={{ marginRight: '10px', color: '#ff8d03', fontSize: '16px' }} />
+                      <a href="mailto:info@cheetahnet.ug" className="link" style={{ color: '#999' }}>
                         info@cheetahnet.ug
                       </a>
                     </p>
-                    <p style={{ marginBottom: '8px' }}>
-                      <i className="fas fa-phone" style={{ marginRight: '8px', color: '#ff8d03' }} />
-                      <a href="tel:+256771099075" className="link">
+                    <p style={{ marginBottom: '10px', display: 'flex', alignItems: 'center' }}>
+                      <i className="fas fa-phone" style={{ marginRight: '10px', color: '#ff8d03', fontSize: '16px' }} />
+                      <a href="tel:+256771099075" className="link" style={{ color: '#999' }}>
                         +256 771 099075
                       </a>
                     </p>
@@ -92,10 +92,10 @@ const Footer1 = () => {
                     <span style={{ marginRight: '15px', fontSize: '14px', color: '#999', fontWeight: '600' }}>
                       Follow Us:
                     </span>
-                    <a href="https://www.facebook.com/share/1BAur7WwFw/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" style={{ marginRight: '12px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
+                    <a href="https://www.facebook.com/share/1BAur7WwFw/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" style={{ marginRight: '15px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="https://x.com/CheetahNetUg" target="_blank" rel="noopener noreferrer" title="Follow @CheetahNetUg on X" style={{ marginRight: '12px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
+                    <a href="https://x.com/CheetahNetUg" target="_blank" rel="noopener noreferrer" title="Follow @CheetahNetUg on X" style={{ marginRight: '15px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
                       <i className="fab fa-twitter" />
                     </a>
                   </div>
@@ -103,7 +103,7 @@ const Footer1 = () => {
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".4s"
             >
               <div className="single-footer-widget">
@@ -133,7 +133,7 @@ const Footer1 = () => {
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".6s"
             >
               <div className="single-footer-widget">
@@ -156,11 +156,14 @@ const Footer1 = () => {
                   <li>
                     <Link href="testimonial">Testimonials</Link>
                   </li>
+                  <li>
+                    <Link href="team">Our Team</Link>
+                  </li>
                 </ul>
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".8s"
             >
               <div className="single-footer-widget">
@@ -183,7 +186,36 @@ const Footer1 = () => {
                   <li>
                     <Link href="contact">Network Coverage</Link>
                   </li>
+                  <li>
+                    <Link href="contact">Technical Support</Link>
+                  </li>
                 </ul>
+              </div>
+            </div>
+            <div
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
+              data-wow-delay=".9s"
+            >
+              <div className="single-footer-widget">
+                <div className="widget-head">
+                  <h5>24/7 Support</h5>
+                </div>
+                <div className="support-text" style={{ marginTop: '10px' }}>
+                  <p style={{ marginBottom: '15px', color: '#999', fontSize: '14px' }}>
+                    Need immediate assistance? Our support team is available around the clock.
+                  </p>
+                  <h3 style={{ marginBottom: '10px' }}>
+                    <a href="tel:+256771099075" style={{ color: '#ff8d03', fontSize: '20px', fontWeight: '700' }}>
+                      +256 771 099075
+                    </a>
+                  </h3>
+                  <p style={{ color: '#999', fontSize: '14px', marginBottom: '15px' }}>
+                    Email us anytime
+                  </p>
+                  <a href="mailto:info@cheetahnet.ug" className="link" style={{ color: '#ff8d03', fontSize: '14px' }}>
+                    info@cheetahnet.ug
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -193,7 +225,7 @@ const Footer1 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-              Copyright © 2026 <Link href="/">Modinatheme</Link>. All Rights
+              Copyright © 2026 <Link href="/">CheetahNet</Link>. All Rights
               Reserved. | Powered by <Link href="https://wa.me/256705161161" target="_blank" rel="noopener noreferrer">favorSphere</Link>
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
@@ -227,7 +259,7 @@ const Footer2 = () => {
         <div className="footer-widgets-wrapper">
           <div className="row">
             <div
-              className="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp"
+              className="col-xl-4 col-sm-6 col-md-6 col-lg-4 wow fadeInUp"
               data-wow-delay=".2s"
             >
               <div className="single-footer-widget">
@@ -237,19 +269,19 @@ const Footer2 = () => {
                   </Link>
                 </div>
                 <div className="footer-content">
-                  <p>
+                  <p style={{ marginBottom: '20px', lineHeight: '1.8' }}>
                     CheetahNet is Uganda's leading internet service provider, delivering high-speed broadband, fiber optic, and WiFi solutions for homes and businesses. We connect communities with reliable, fast, and affordable internet services.
                   </p>
-                  <div className="contact-info" style={{ marginTop: '20px', marginBottom: '20px' }}>
-                    <p style={{ marginBottom: '8px' }}>
-                      <i className="fas fa-envelope" style={{ marginRight: '8px', color: '#ff8d03' }} />
-                      <a href="mailto:info@cheetahnet.ug" className="link">
+                  <div className="contact-info" style={{ marginBottom: '25px' }}>
+                    <p style={{ marginBottom: '10px', display: 'flex', alignItems: 'center' }}>
+                      <i className="fas fa-envelope" style={{ marginRight: '10px', color: '#ff8d03', fontSize: '16px' }} />
+                      <a href="mailto:info@cheetahnet.ug" className="link" style={{ color: '#999' }}>
                         info@cheetahnet.ug
                       </a>
                     </p>
-                    <p style={{ marginBottom: '8px' }}>
-                      <i className="fas fa-phone" style={{ marginRight: '8px', color: '#ff8d03' }} />
-                      <a href="tel:+256771099075" className="link">
+                    <p style={{ marginBottom: '10px', display: 'flex', alignItems: 'center' }}>
+                      <i className="fas fa-phone" style={{ marginRight: '10px', color: '#ff8d03', fontSize: '16px' }} />
+                      <a href="tel:+256771099075" className="link" style={{ color: '#999' }}>
                         +256 771 099075
                       </a>
                     </p>
@@ -258,10 +290,10 @@ const Footer2 = () => {
                     <span style={{ marginRight: '15px', fontSize: '14px', color: '#999', fontWeight: '600' }}>
                       Follow Us:
                     </span>
-                    <a href="https://www.facebook.com/share/1BAur7WwFw/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" style={{ marginRight: '12px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
+                    <a href="https://www.facebook.com/share/1BAur7WwFw/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" title="Facebook" style={{ marginRight: '15px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="https://x.com/CheetahNetUg" target="_blank" rel="noopener noreferrer" title="Follow @CheetahNetUg on X" style={{ marginRight: '12px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
+                    <a href="https://x.com/CheetahNetUg" target="_blank" rel="noopener noreferrer" title="Follow @CheetahNetUg on X" style={{ marginRight: '15px', fontSize: '18px', color: '#999', transition: 'color 0.3s' }}>
                       <i className="fab fa-twitter" />
                     </a>
                   </div>
@@ -269,7 +301,7 @@ const Footer2 = () => {
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".4s"
             >
               <div className="single-footer-widget">
@@ -299,7 +331,7 @@ const Footer2 = () => {
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".6s"
             >
               <div className="single-footer-widget">
@@ -322,11 +354,14 @@ const Footer2 = () => {
                   <li>
                     <Link href="testimonial">Testimonials</Link>
                   </li>
+                  <li>
+                    <Link href="team">Our Team</Link>
+                  </li>
                 </ul>
               </div>
             </div>
             <div
-              className="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
               data-wow-delay=".8s"
             >
               <div className="single-footer-widget">
@@ -349,7 +384,36 @@ const Footer2 = () => {
                   <li>
                     <Link href="contact">Network Coverage</Link>
                   </li>
+                  <li>
+                    <Link href="contact">Technical Support</Link>
+                  </li>
                 </ul>
+              </div>
+            </div>
+            <div
+              className="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp"
+              data-wow-delay=".9s"
+            >
+              <div className="single-footer-widget">
+                <div className="widget-head">
+                  <h5>24/7 Support</h5>
+                </div>
+                <div className="support-text" style={{ marginTop: '10px' }}>
+                  <p style={{ marginBottom: '15px', color: '#999', fontSize: '14px' }}>
+                    Need immediate assistance? Our support team is available around the clock.
+                  </p>
+                  <h3 style={{ marginBottom: '10px' }}>
+                    <a href="tel:+256771099075" style={{ color: '#ff8d03', fontSize: '20px', fontWeight: '700' }}>
+                      +256 771 099075
+                    </a>
+                  </h3>
+                  <p style={{ color: '#999', fontSize: '14px', marginBottom: '15px' }}>
+                    Email us anytime
+                  </p>
+                  <a href="mailto:info@cheetahnet.ug" className="link" style={{ color: '#ff8d03', fontSize: '14px' }}>
+                    info@cheetahnet.ug
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -359,7 +423,7 @@ const Footer2 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-              Copyright © 2026 <Link href="/">Modinatheme</Link>. All Rights
+              Copyright © 2026 <Link href="/">CheetahNet</Link>. All Rights
               Reserved. | Powered by <Link href="https://wa.me/256705161161" target="_blank" rel="noopener noreferrer">favorSphere</Link>
             </p>
             <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
@@ -500,8 +564,8 @@ const Footer3 = () => {
                 <div className="footer-address-text">
                   <p>55 Main Street, 2nd block Malborne, Australia</p>
                   <h5>Contact</h5>
-                  <a href="mailto:info@cheetahnet.ug" className="link-mail">
-                    info@cheetahnet.ug
+                  <a href="mailto:info@example.com" className="link-mail">
+                    info@example.com
                   </a>
                   <h5 className="pt-3">
                     <a href="tel:+88012345688">+880 (123) 456 88</a>
@@ -516,8 +580,8 @@ const Footer3 = () => {
         <div className="container">
           <div className="footer-wrapper d-flex align-items-center justify-content-between">
             <p className="wow fadeInUp color-2" data-wow-delay=".4s">
-              Copyright © 2026 <Link href="/">Modinatheme</Link>. All Rights
-              Reserved. | Powered by <Link href="https://wa.me/256705161161" target="_blank" rel="noopener noreferrer">favorSphere</Link>
+              Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
+              Reserved.
             </p>
           </div>
         </div>
@@ -588,8 +652,8 @@ const Footer4 = () => {
         </div>
         <div className="footer-bottom-4">
           <p className="wow fadeInUp text-center" data-wow-delay=".3s">
-            Copyright © 2026 <Link href="/">Modinatheme</Link>. All Rights
-            Reserved. | Powered by <Link href="https://wa.me/256705161161" target="_blank" rel="noopener noreferrer">favorSphere</Link>
+            Copyright © 2024 <Link href="/">Modinatheme</Link>. All Rights
+            Reserved.
           </p>
         </div>
       </div>

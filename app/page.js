@@ -15,8 +15,8 @@ const page = () => {
       {/*<< Hero Section Start >>*/}
       <Home1 />
       {/*<< Moving Words Section Start >>*/}
-      <div className="marque-section pt-0" style={{ paddingTop: '0', paddingBottom: '0', position: 'relative', zIndex: 100, backgroundColor: '#0c0f2b', opacity: 1, visibility: 'visible' }}>
-        <div className="marquee-wrapper text-slider" style={{ position: 'relative', zIndex: 100, opacity: 1, visibility: 'visible' }}>
+      <div className="marque-section pt-0" style={{ paddingTop: '0', paddingBottom: '0' }}>
+        <div className="marquee-wrapper text-slider">
           <div className="marquee-inner to-left">
             <ul className="marqee-list d-flex">
               <li className="marquee-item">
@@ -158,6 +158,9 @@ const page = () => {
       </section>
       {/*<< Feature Section Start >>*/}
       <section className="feature-section fix section-padding">
+        <div className="shape-image">
+          <img src="assets/img/shape.png" alt="shape-img" />
+        </div>
         <div className="container">
           <div className="row g-4">
             <div
